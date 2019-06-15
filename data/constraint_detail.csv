@@ -1,0 +1,106 @@
+﻿constraint_number;derived_constraint_number;constraint_description;derived_constraint_notes;type;points;min;max;maximum_sequential_matches;interim_weeks;begin_date;end_date;teama_id;teamb_id
+1;10001;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;8/19/2017;8/19/2017;;Miami FC
+1;10002;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;10/7/2017;10/7/2017;;Carolina Railhawks
+1;10003;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;7/29/2017;7/29/2017;;Miami FC
+1;10004;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;9/2/2017;9/2/2017;;Indy Eleven
+1;10005;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;8/19/2017;8/19/2017;;Indy Eleven
+1;10006;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;10/7/2017;10/7/2017;;FC Edmonton
+1;10007;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;10/21/2017;10/21/2017;;Carolina Railhawks
+1;10008;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;9/30/2017;9/30/2017;;Carolina Railhawks
+1;10009;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;9/2/2017;9/2/2017;;Carolina Railhawks
+1;10010;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;8/19/2017;8/19/2017;;Carolina Railhawks
+1;10011;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;8/5/2017;8/5/2017;;Carolina Railhawks
+1;10012;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;8/12/2017;8/12/2017;;Miami FC
+1;10013;Away Requests;;DerivedConstraint::AwayRequest;-500;;;;;9/16/2017;9/16/2017;;Carolina Railhawks
+1;10001;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;10/21/2017;10/21/2017;San Francisco Deltas;
+1;10002;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;9/16/2017;9/16/2017;San Francisco Deltas;
+1;10003;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;9/2/2017;9/2/2017;San Francisco Deltas;
+1;10004;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;7/29/2017;7/29/2017;San Francisco Deltas;
+1;10005;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;10/7/2017;10/14/2017;Puerto Rico FC;
+1;10006;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;9/2/2017;9/2/2017;Puerto Rico FC;
+1;10007;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;10/28/2017;10/28/2017;Jacksonville Armada FC;
+1;10008;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;9/30/2017;10/7/2017;Jacksonville Armada FC;
+1;10009;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;9/16/2017;9/16/2017;Jacksonville Armada FC;
+1;10010;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;8/19/2017;9/2/2017;Jacksonville Armada FC;
+1;10011;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;8/26/2017;8/26/2017;Indy Eleven;
+1;10012;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;10/7/2017;10/7/2017;San Francisco Deltas;
+1;10013;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;8/12/2017;8/12/2017;San Francisco Deltas;
+1;10014;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;8/26/2017;8/26/2017;New York Cosmos;
+1;10015;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;8/5/2017;8/12/2017;New York Cosmos;
+1;10016;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;10/14/2017;10/14/2017;Miami FC;
+1;10017;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;10/28/2017;10/28/2017;Indy Eleven;
+1;10018;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;8/26/2017;9/2/2017;FC Edmonton;
+1;10019;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;8/5/2017;8/5/2017;FC Edmonton;
+1;10020;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;9/30/2017;9/30/2017;San Francisco Deltas;
+1;10021;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;8/5/2017;8/5/2017;Jacksonville Armada FC;
+1;10022;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;7/29/2017;7/29/2017;Puerto Rico FC;
+1;10023;Home Blackouts;;DerivedConstraint::HomeBlackout;-999;;;;;9/9/2017;9/9/2017;Miami FC;
+2;20001;Must Host;;DerivedConstraint::HomeRequest;-999;;;;;10/28/2017;10/28/2017;San Francisco Deltas;
+2;20002;Must Host;;DerivedConstraint::HomeRequest;-999;;;;;10/14/2017;10/14/2017;San Francisco Deltas;
+2;20003;Must Host;;DerivedConstraint::HomeRequest;-999;;;;;9/9/2017;9/9/2017;San Francisco Deltas;
+2;20004;Must Host;;DerivedConstraint::HomeRequest;-999;;;;;8/26/2017;8/26/2017;San Francisco Deltas;
+2;20005;Must Host;;DerivedConstraint::HomeRequest;-999;;;;;8/19/2017;8/19/2017;San Francisco Deltas;
+2;20006;Must Host;;DerivedConstraint::HomeRequest;-999;;;;;8/5/2017;8/5/2017;San Francisco Deltas;
+2;20007;Must Host;;DerivedConstraint::HomeRequest;-999;;;;;9/23/2017;9/23/2017;San Francisco Deltas;
+2;20008;Must Host;;DerivedConstraint::HomeRequest;-999;;;;;7/29/2017;7/29/2017;Carolina Railhawks;
+3;30001;Teams must play a total of 16 matches in the Fall;;DerivedConstraint::TeamMatchesTotalCount;-999;16;16;;;;;;
+4;40001;Teams must play 8 home matches in the Fall;;DerivedConstraint::TeamMatchesHomeCount;-999;7;8;;;7/22/2017;10/28/2017;;
+5;50001;Teams must play 8 away matches in the Fall;;DerivedConstraint::TeamMatchesAwayCount;-999;7;8;;;7/22/2017;10/28/2017;;
+6;60001;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Jacksonville Armada FC;Miami FC
+6;60002;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Carolina Railhawks;San Francisco Deltas
+6;60003;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Carolina Railhawks;Indy Eleven
+6;60004;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Carolina Railhawks;Jacksonville Armada FC
+6;60005;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Carolina Railhawks;Miami FC
+6;60006;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Carolina Railhawks;New York Cosmos
+6;60007;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Carolina Railhawks;Puerto Rico FC
+6;60008;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;FC Edmonton;Jacksonville Armada FC
+6;60009;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;FC Edmonton;Indy Eleven
+6;60010;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;FC Edmonton;New York Cosmos
+6;60011;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;FC Edmonton;Puerto Rico FC
+6;60012;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;FC Edmonton;San Francisco Deltas
+6;60013;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Indy Eleven;Jacksonville Armada FC
+6;60014;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Indy Eleven;Miami FC
+6;60015;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Indy Eleven;New York Cosmos
+6;60016;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Indy Eleven;San Francisco Deltas
+6;60017;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Jacksonville Armada FC;New York Cosmos
+6;60018;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Jacksonville Armada FC;Puerto Rico FC
+6;60019;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Jacksonville Armada FC;San Francisco Deltas
+6;60020;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Miami FC;New York Cosmos
+6;60021;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Miami FC;Puerto Rico FC
+6;60022;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Miami FC;San Francisco Deltas
+6;60023;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;New York Cosmos;Puerto Rico FC
+6;60024;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Puerto Rico FC;San Francisco Deltas
+6;60025;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Carolina Railhawks;FC Edmonton
+6;60026;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;FC Edmonton;Miami FC
+6;60027;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;Indy Eleven;Puerto Rico FC
+6;60028;Every team must play every team 2x in the Fall (once home and once away);;DerivedConstraint::MatchupRequest;-999;2;3;;;7/29/2017;10/28/2017;New York Cosmos;San Francisco Deltas
+7;70001;1/4 Match Gap;;DerivedConstraint::AllMatchupsMatchupSpacing;-999;3;15;;;7/22/2017;10/29/2017;;
+12;120001;JAX Post Midweek Matchup Blackouts;;DerivedConstraint::MatchupBlackout;-999;;;;;10/28/2017;10/28/2017;Jacksonville Armada FC;San Francisco Deltas
+12;120002;JAX Post Midweek Matchup Blackouts;;DerivedConstraint::MatchupBlackout;-999;;;;;8/19/2017;8/19/2017;Jacksonville Armada FC;San Francisco Deltas
+12;120003;JAX Post Midweek Matchup Blackouts;;DerivedConstraint::MatchupBlackout;-999;;;;;8/19/2017;8/19/2017;Jacksonville Armada FC;FC Edmonton
+12;120004;JAX Post Midweek Matchup Blackouts;;DerivedConstraint::MatchupBlackout;-999;;;;;10/28/2017;10/28/2017;Jacksonville Armada FC;FC Edmonton
+13;130001;Jacksonville Midweek Home Match Request;;DerivedConstraint::MatchRequest;-999;1;1;;;8/16/2017;8/16/2017;Jacksonville Armada FC;"San Francisco Deltas; Puerto Rico FC"
+13;130002;Jacksonville Midweek Home Match Request;;DerivedConstraint::MatchRequest;-999;1;1;;;10/25/2017;10/25/2017;Jacksonville Armada FC;"Puerto Rico FC; San Francisco Deltas"
+15;150001;First Round Request;;DerivedConstraint::AwayRequest;-999;;;;;7/29/2017;7/29/2017;;San Francisco Deltas
+15;150002;First Round Request;;DerivedConstraint::AwayRequest;-999;;;;;7/29/2017;7/29/2017;;Puerto Rico FC
+15;150003;First Round Request;;DerivedConstraint::AwayRequest;-999;;;;;7/29/2017;7/29/2017;;Indy Eleven
+15;150004;First Round Request;;DerivedConstraint::HomeRequest;-999;;;;;7/29/2017;7/29/2017;Miami FC;
+15;150005;First Round Request;;DerivedConstraint::HomeRequest;-999;;;;;7/29/2017;7/29/2017;New York Cosmos;
+15;150006;First Round Request;;DerivedConstraint::HomeRequest;-999;;;;;7/29/2017;7/29/2017;Jacksonville Armada FC;
+15;150007;First Round Request;;DerivedConstraint::HomeRequest;-999;;;;;7/29/2017;7/29/2017;Carolina Railhawks;
+15;150008;First Round Request;;DerivedConstraint::AwayRequest;-999;;;;;7/29/2017;7/29/2017;;FC Edmonton
+16;160001;Match Blackout Prior to Open Cup Matches;;DerivedConstraint::MatchBlackout;-999;;;;;9/16/2017;9/16/2017;FC Edmonton;"Miami FC; Jacksonville Armada FC"
+16;160002;Match Blackout Prior to Open Cup Matches;;DerivedConstraint::MatchBlackout;-999;;;;;8/5/2017;8/5/2017;FC Edmonton;"Miami FC; Jacksonville Armada FC"
+17;170001;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;9/27/2017;9/27/2017;Puerto Rico FC;
+17;170002;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;9/27/2017;9/27/2017;Indy Eleven;
+17;170003;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;9/20/2017;9/20/2017;Indy Eleven;
+17;170004;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;9/13/2017;9/13/2017;Indy Eleven;
+17;170005;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;8/30/2017;8/30/2017;San Francisco Deltas;
+17;170006;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;8/16/2017;8/16/2017;San Francisco Deltas;
+17;170007;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;8/16/2017;8/16/2017;Jacksonville Armada FC;
+17;170008;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;8/2/2017;8/2/2017;Puerto Rico FC;
+17;170009;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;10/11/2017;10/11/2017;San Francisco Deltas;
+17;170010;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;9/6/2017;9/6/2017;San Francisco Deltas;
+17;170011;Preferred Midweek Dates;;DerivedConstraint::HomeRequest;-50;;;;;8/2/2017;8/2/2017;Miami FC;
+18;180001;Jacksonville Midweek Must Host;;DerivedConstraint::HomeRequest;-999;;;;;8/16/2017;8/16/2017;Jacksonville Armada FC;
+18;180002;Jacksonville Midweek Must Host;;DerivedConstraint::HomeRequest;-999;;;;;10/25/2017;10/25/2017;Jacksonville Armada FC;
