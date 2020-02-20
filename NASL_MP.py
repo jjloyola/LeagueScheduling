@@ -42,7 +42,6 @@ n = 8
 TEAMS = {}
 for i in dfTeams.index:
     TEAMS[dfTeams.loc[i,'Short Name']]= i+1
-
     
 nbRounds = n-1;
 ROUNDS = {}
@@ -88,7 +87,6 @@ for r in ROUNDS.values():
     for t1 in TEAMS.values():
         for t2 in TEAMS.values():
             plays[(t1, t2, r)] = mdl.binary_var(name="x_{}_{}_{}".format(t1, t2, r))
-
 
 
 # ### <font color=green> Objective Function </font>
@@ -187,6 +185,8 @@ for t1 in TEAMS.values():
                            <= 1+away[(t1,r)]) #(9)
 
 
+# In[10]:
+
 
 def getRoundID(dateStr):
     if str(dateStr) in ROUNDS.keys():
@@ -207,10 +207,7 @@ def getTeamID(shortName):
         return TEAMS[shortName]
     else:
         return -1
-
-def getTeamName(teamID):
-    return dfTeams.loc[teamID-1,'Short Name']
-
+    
 
 def getRowsByConstraintDesc(constraintDescriptionStr):
     newDF = dfConstraints.loc[dfConstraints['constraint_description'] == constraintDescriptionStr]
@@ -229,6 +226,7 @@ def getConstraintInfo(row):
     return ctDict
 
 
+# In[11]:
 
 
 # Must Host (DerivedConstraint::HomeRequest)
@@ -250,6 +248,8 @@ for index,row in getRowsByConstraintDesc('Home Blackouts').iterrows():
                            ctname='Home_Blackout_{}_R{}'.format(row['teama_id'],r))
         r=r+1
 
+
+# In[12]:
 
 
 # JAX Post Midweek Matchup Blackouts (DerivedConstraint::MatchupBlackout)
@@ -295,12 +295,16 @@ for index,row in getRowsByConstraintDesc('Jacksonville Midweek Must Host').iterr
         r=r+1
 
 
-# First Round Request (DerivedConstraint::HomeRequest and AwayRequest)
+# In[15]:
+
+
+# First Round Request (DerivedConstraint::HomeRequest)
 # Teams specified whether with whom they want to play on the first match.
+
 for index,row in getRowsByConstraintDesc('First Round Request').iterrows():
     ctDict = getConstraintInfo(row)
-
     # Two possible meanings: for the multiple row constraint
+    
     r = ctDict['roundNum_begin']
     while r <= ctDict['roundNum_end']:
         if str(row['type']).find('HomeRequest') != -1:
@@ -316,27 +320,7 @@ for index,row in getRowsByConstraintDesc('First Round Request').iterrows():
         r=r+1
 
 
-# Match Blackout Prior to Open Cup Matches (DerivedConstraint::MatchBlackout)
-for index, row in getRowsByConstraintDesc('Match Blackout Prior to Open Cup Matches').iterrows():
-    ctDict = getConstraintInfo(row)
-    visitorList = getTeamIDList(row['teamb_id'])
-
-    r = ctDict['roundNum_begin']
-    while r <= ctDict['roundNum_end']:
-        mdl.add_constraint(mdl.sum(plays[(ctDict['hostID'], v, r)] for v in visitorList) == 0,
-                           ctname='Match_Blackout_{}_{}_R{}'.format(row['teama_id'], row['teamb_id'], r))
-        r = r + 1
-
-
-#1/4 Match Gap
-for t1 in TEAMS.values():
-    for t2 in TEAMS.values():
-        if t1 < t2:
-            for r in ROUNDS.values():
-                if r < 20:
-                    mdl.add_indicator_constraints_(
-                        [mdl.indicator_constraint(plays[t1,t2,r], mdl.sum(plays[t1,t2,r_aux] + plays[t2,t1,r_aux] for r_aux in range(r+1,r+5)) == 0)],
-                    )
+# In[16]:
 
 
 def mp_solution_to_df(solution):
@@ -346,47 +330,28 @@ def mp_solution_to_df(solution):
         solution_df.loc[index, 'name'] = dvar.to_string()
         solution_df.loc[index, 'value'] = dvar.solution_value
 
+    print(solution_df)    
+    
     return solution_df
 
 
-def mp_solution_to_schedule(solution):
-    scheduleDict = {}
-
-    for index, dvar in enumerate(solution.iter_variables()):
-        varParts = dvar.to_string().split('_')
-        varValues = {'round':int(varParts[3]),
-                     'home':getTeamName(int(varParts[1])),
-                     'visitor':getTeamName(int(varParts[2]))}
-        if varValues['round'] not in scheduleDict.keys():
-            scheduleDict[varValues['round']] = []
-
-        scheduleDict[varValues['round']].append(varValues['home'] + '-' + varValues['visitor'])
-
-    scheduleDF = pd.DataFrame.from_dict(scheduleDict, orient='index').T
-
-    return scheduleDF
+# In[19]:
 
 
-
-outputs = {}
+#mdl.parameters.timelimit=10
 
 try:
     if not mdl.solve():
         print('*** Problem has no solution')
     else:
-        print('* model solved as function:')        # Save the CPLEX solution as 'solution.csv' program output
-        solution_df = mp_solution_to_schedule(mdl.solution)
-        outputs['solution'] = solution_df
-        get_environment().store_solution(outputs)
-
-        pd.set_option('max_columns', 30)
+        print('* model solved as function:')
+        # Save the CPLEX solution as 'solution.csv' program output
+        solution_df = mp_solution_to_df(mdl.solution)
+        get_environment().store_solution(solution_df)
+        print("\n\n---------------------SOLUTION--------------------\n\n")
         print(solution_df)
 except Exception:
     print("Use Cloud Solver.", Exception.args)
     if(path!=""):
         mdl.export_as_lp(basename="MP_Model", path=path)
-
-
-
-
 
