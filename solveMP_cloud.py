@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[14]:
+# In[1]:
 
 
 '''
@@ -11,10 +11,10 @@ service.
 @author: kong
 '''
 from docloud.job import JobClient
-from docplex.cp import config
+from docplex.mp.context import Context
 
 
-# In[18]:
+# In[2]:
 
 
 # --------------------------------------------------------------------------
@@ -43,7 +43,7 @@ if __name__ == '__main__':
        context.solver.docloud.key = 'example api_key'
     '''
     url = 'https://api-oaas.docloud.ibmcloud.com/job_manager/rest/v1'
-    key = 'api_e10c0ac7-d350-4017-ad7f-2aa28f974a29'
+    key = 'example api_key'
 
 #    if url is None or key is None:
         # create a default context and use credentials defined in there.
@@ -52,13 +52,13 @@ if __name__ == '__main__':
 #        key = context.solver.docloud.key
 
     client = JobClient(url=url, api_key=key)
-    resp = client.execute(input=['NASL_CP.py',
+    resp = client.execute(input=['NASL_MP.py',
                                  'data/teams.csv',
                                  'data/constraint_detail.csv',
                                  'data/dates.csv',
                                  'data/distances.json'],
                           output='solution.json', 
-                          waittime=30,
+                          waittime=60,
                           load_solution=True,
                           log='logs.txt')
 

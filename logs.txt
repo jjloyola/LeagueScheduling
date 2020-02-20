@@ -1,39 +1,24 @@
 * model solved as function:
+         1         2         3        4         5        6        7   \
+0   JAX-SFD   IND-NYC   CAR-MIA  IND-SFD  JAX-PRFC  CAR-JAX  MIA-SFD
+1   CAR-FCE  PRFC-CAR   IND-JAX     None   IND-CAR  FCE-IND     None
+2   NYC-IND      None  SFD-PRFC     None   NYC-FCE  SFD-MIA     None
+3  MIA-PRFC      None      None     None      None     None     None
 
+         8         9        10        11        12       13        14  \
+0  PRFC-FCE  PRFC-CAR  CAR-SFD   JAX-CAR  PRFC-JAX  JAX-FCE  PRFC-IND
+1   CAR-IND   NYC-MIA  MIA-FCE  NYC-PRFC   IND-MIA  MIA-CAR   MIA-NYC
+2   SFD-NYC      None  IND-JAX   FCE-IND   SFD-NYC     None   FCE-SFD
+3      None      None     None      None      None     None      None
 
----------------------SOLUTION--------------------
-objective: 6
-  x_5_6_1=1
-  x_5_7_5=1
-  x_5_8_3=1
-  x_6_3_7=1
-  x_7_6_3=1
-  x_7_8_1=1
-  x_8_1_7=1
-  x_8_6_5=1
-  x_1_5_2=1
-  a_4_1=1
-  x_1_7_4=1
-  x_3_5_4=1
-  x_3_7_2=1
-  x_3_8_6=1
-  x_5_2_6=1
-  h_6_5=1
-  a_6_5=1
-  x_6_2_2=1
-  x_6_4_4=1
-  h_7_4=1
-  a_7_4=1
-  x_7_4_6=1
-  h_4_1=1
-  x_8_4_2=1
-  x_1_6_6=1
-  x_2_1_5=1
-  x_2_3_3=1
-  x_2_4_1=1
-  x_2_7_7=1
-  x_3_1_1=1
-  x_4_1_3=1
-  x_4_3_5=1
-  x_4_5_7=1
-  x_8_2_4=1
+         15        16        17        18       19       20        21  \
+0  PRFC-JAX   JAX-FCE  PRFC-NYC  PRFC-IND  NYC-CAR  JAX-MIA   FCE-IND
+1   SFD-MIA  MIA-PRFC   FCE-CAR   FCE-MIA     None  IND-SFD   NYC-CAR
+2      None   CAR-SFD      None   NYC-JAX     None  FCE-NYC  SFD-PRFC
+3      None      None      None      None     None     None      None
+
+        22        23       24        25
+0  JAX-MIA  FCE-PRFC  JAX-SFD   MIA-JAX
+1  IND-NYC   NYC-JAX  MIA-IND  CAR-PRFC
+2  SFD-FCE      None  CAR-FCE   SFD-NYC
+3     None      None     None      None
